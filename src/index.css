@@ -1,0 +1,122 @@
+/* 1. Import your fonts (This part was correct) */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant', 'serif';
+  --font-sans: 'IBM Plex Sans', 'sans-serif'; 
+}
+
+@layer utilities {
+  .font-cormorant {
+    font-family: var(--font-serif);
+  }
+
+  .font-plex {
+    font-family: var(--font-sans);
+  }
+
+  @keyframes slideUpFade {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-slideUpFade {
+    animation: slideUpFade .35s ease-out;
+  }
+  .animate-spin-slow {
+    animation: spin 1.2s linear infinite;
+  }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif); /* Use the theme variable */
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+  p {
+    font-family: var(--font-sans); /* Use the theme variable */
+    letter-spacing: 1.8px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+button {
+  font-family: var(--font-sans);
+  letter-spacing: 0.25px;
+  font-weight: 400;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.nav-link {
+  position: relative;
+  padding-bottom: 3px;
+  font-size: 16px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.6px;
+  width: 0;
+  background-color: #8B4A63; /* Purple underline */
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+
+/* Change font on mobile */
+@media (max-width: 768px) {
+  button {
+    font-family: var(--font-serif); /* or whatever font you want */
+  }
+}
+
+  a {
+    font-family: var(--font-serif); /* Use the theme variable */
+    letter-spacing: 0.15px;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+}
+
+/* Default: desktop and tablet — no scroll, normal layout */
+.scroll-frame {
+  max-height: none;
+  overflow-y: visible;
+}
+
+/* Mobile only — enable scrolling */
+@media (max-width: 768px) {
+  .scroll-frame {
+    max-height: 85vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Hide scrollbar (IE/Edge) */
+    scrollbar-width: none; /* Hide scrollbar (Firefox) */
+  }
+
+  /* Hide scrollbar (Webkit browsers) */
+  .scroll-frame::-webkit-scrollbar {
+    display: none;
+  }
+}
