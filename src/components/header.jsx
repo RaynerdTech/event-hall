@@ -51,9 +51,9 @@ const Header = () => {
               }`}
             >
               <h1 className="text-3xl md:tracking-[4px]">GLORY RSVP</h1>
-              <h3 className="tracking-[0.1px] mt-1 text-[#141011] uppercase text-[14px]">
+              {/* <h3 className="tracking-[0.1px] mt-1 text-[#141011] uppercase text-[14px]">
                 LONDON
-              </h3>
+              </h3> */}
             </div>
             <div className="flex items-center justify-between">
               <div className="flex-1 text-left">
