@@ -7,12 +7,17 @@
 @theme {
   --font-serif: 'Cormorant', 'serif';
   --font-sans: 'IBM Plex Sans', 'sans-serif'; 
+  /* --font-new: 'Reem Kufi', 'sans-serif';  */
 }
 
 @layer utilities {
   .font-cormorant {
     font-family: var(--font-serif);
   }
+
+  /* .font-reemkufi {
+    font-family: var(--font-new);
+  } */
 
   .font-plex {
     font-family: var(--font-sans);

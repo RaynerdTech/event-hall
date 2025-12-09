@@ -148,7 +148,7 @@ const Header = () => {
             {/* Center: Logo */}
             <div className="flex-grow text-center font-serif"> {/* Adjusted margin to better center */}
               <h2 className="text-[16px]">GLORY RSVP</h2>
-             <p className="text-[10px] uppercase tracking-[0.5px]">LONDON</p>
+             {/* <p className="text-[10px] uppercase tracking-[0.5px]">LONDON</p> */}
 
             </div>
 

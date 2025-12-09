@@ -8,7 +8,7 @@ import Experience from "./home/Experience";
 import Packages from "./home/Packages";
 import Carousel from "./home/Carousel";
 import Enquiry from "./page/Enquiry"; // ✅ import your new page
-
+import About from "./pages/About";
 function App() {
   return (
     <Router>
@@ -26,7 +26,8 @@ function App() {
             </>
           }
         />
-        <Route path="/enquiry" element={<Enquiry />} /> {/* ✅ new route */}
+        <Route path="/enquiry" element={<Enquiry />} /> 
+        <Route path="/about" element={<About />} /> 
       </Routes>
       <Footer />
     </Router>
