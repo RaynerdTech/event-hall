@@ -88,30 +88,30 @@ const NavLinks = ({ className }) => (
 >
       <li className="md:block">
   <a
-    href="/#home"
-    className="nav-link text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] md:font-medium font-bold"
+    href="/"
+    className="nav-link text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] font-medium"
   >
     HOME
   </a>
             </li>
                <li>
-        <a href="/#about" className="nav-link text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] md:font-medium font-bold">
+        <a href="/about" className="nav-link text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] font-medium">
           ABOUT US
         </a>
       </li>
 
       <li>
-        <a href="/#packages" className="nav-link text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] md:font-medium font-bold">
+        <a href="/packages" className="nav-link text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] font-medium">
           PACKAGES
         </a>
       </li>
       <li>
-        <a href="/#media" className="nav-link text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] md:font-medium font-bold">
+        <a href="/media" className="nav-link text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] font-medium">
           MEDIA
         </a>
       </li>
       <li>
-        <a href="/#contact" className="nav-link text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] md:font-medium font-bold">
+        <a href="/contact" className="nav-link text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] font-medium">
           CONTACT US
         </a>
       </li>
@@ -122,17 +122,17 @@ const NavLinks = ({ className }) => (
 const PrivacyLinks = ({ className }) => (
   <ul className={className}>
     <li>
-      <a href="/privacy" className="hover:underline text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] md:font-medium font-bold">
+      <a href="/privacy" className="hover:underline text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] font-medium">
         PRIVACY POLICY
       </a>
     </li>
     <li>
-      <a href="/faqs" className="hover:underline text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] md:font-medium font-bold">
+      <a href="/faqs" className="hover:underline text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] font-medium">
         FAQs
       </a>
     </li>
     <li>
-      <a href="/terms" className="hover:underline text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] md:font-medium font-bold">
+      <a href="/terms-condtion" className="hover:underline text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] font-medium">
         TERMS &amp; CONDITIONS
       </a>
     </li>
@@ -141,10 +141,10 @@ const PrivacyLinks = ({ className }) => (
 
 const Socials = ({ className }) => (
   <div className={className}>
-    <p className="hover:underline text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] md:font-medium font-bold mb-3 font-cormorant">FIND US</p>
+    <p className="hover:underline text-[14px] md:text-[16px] md:tracking-[0.15px] tracking-[0.1px] md:leading-[24px] leading-[20px] md:font-medium mb-3 font-cormorant font-semibold">FIND US</p>
     <div className="flex gap-10">
       <a
-        href="https://instagram.com"
+        href="https://www.instagram.com/glory_rsvp?igsh=MTE0ajYyeXhyNTU4aw=="
         aria-label="Instagram"
         target="_blank"
         rel="noreferrer"
@@ -153,7 +153,7 @@ const Socials = ({ className }) => (
         <IconInstagram />
       </a>
       <a
-        href="https://www.tiktok.com"
+        href="https://www.tiktok.com/@glory_rsvp?_t=ZN-8yzMwhV5hAM&_r=1"
         aria-label="TikTok"
         target="_blank"
         rel="noreferrer"
@@ -162,7 +162,7 @@ const Socials = ({ className }) => (
         <IconTikTok />
       </a>
       <a
-        href="https://facebook.com"
+        href="https://www.facebook.com/share/1BEP5JKxKc/?mibextid=wwXIfr"
         aria-label="Facebook"
         target="_blank"
         rel="noreferrer"
@@ -171,7 +171,7 @@ const Socials = ({ className }) => (
         <IconFacebook />
       </a>
       <a
-        href="https://linkedin.com"
+        href="https://www.linkedin.com/in/glory-rsvp-638225376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
         aria-label="LinkedIn"
         target="_blank"
         rel="noreferrer"

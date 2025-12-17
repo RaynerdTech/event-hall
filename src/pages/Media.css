@@ -1,0 +1,202 @@
+.media-hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/* .media-inner {
+  width: 76%;
+  margin: 0 auto;
+} */
+
+
+/* Tabs */
+.media-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 12px 0 20px 0;
+  position: relative;
+}
+
+.media-tabs button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.media-tabs button.active {
+  opacity: 1;
+  border-bottom: 1px solid #6F334C;
+}
+
+/* Grid base */
+.media-grid {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.row {
+  display: grid;
+  gap: 24px;
+}
+
+.grid-60-40 {
+  grid-template-columns: 6fr 4fr;
+}
+
+.grid-65-35 {
+  grid-template-columns: 13fr 7fr;
+}
+
+.grid-30-70 {
+  grid-template-columns: 3fr 7fr;
+}
+
+.grid-50-50 {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Images */
+.media-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay logic */
+.overlay-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.center-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+
+
+
+/* Specific image heights */
+img.our-space-main {
+  height: 452px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.center-overlay video {
+  width: 590px;
+  height: 336px;
+  object-fit: cover; /* important so video fills the box */
+  display: block;
+}
+
+img.lastimage {
+  height: 589px;
+  width: 100%;
+  object-fit: cover;
+}
+
+img.galleryheight {
+     object-fit: cover;
+     width: 100%;
+     height: 452px;
+}
+
+video.galleryheight {
+    height: 452px;
+     width: 100%;
+     object-fit: cover;
+} 
+
+.last{
+      height: 512px;
+     width: 100%;
+     object-fit: cover; 
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  img.our-space-main {
+    height: 299px;
+  }
+
+ .center-overlay video{
+    width: 390.964px;
+height: 222.651px;
+  }
+
+  img.lastimage {
+  height: 391px;
+}
+
+img.galleryheight {
+     height: 301.073px;
+}
+
+video.galleryheight {
+      height: 301.073px;
+}
+
+.last{
+      height: 301px;
+}
+
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  img.our-space-main {
+    height: 140px;
+  }
+
+  .overlay-wrapper {
+  gap: 6px;
+}
+
+.center-overlay video {
+  width: 183.296px;
+height: 104.386px;
+  }
+
+.media-grid {
+  width: 94%;
+  gap: 6px;
+}
+.row {
+  gap: 6px;
+}
+
+  img.lastimage {
+  height: 214px;
+}
+
+.media-tabs {
+  margin: 10px 0 20px 0;
+}
+
+img.galleryheight {
+     height: 153.664px;
+}
+video.galleryheight {
+     height: 153.664px;
+}
+.last{
+      height: 153.664px;
+}
+
+}

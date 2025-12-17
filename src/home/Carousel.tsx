@@ -7,14 +7,14 @@ import React, { JSX, useEffect, useRef, useState } from "react";
 
 const IMAGES = [
   "/images/event-decoration (1).jpg",
-  "/images/event-decoration (1).png",
   "/images/event-decoration (2).jpg",
-  "/images/event-decoration (3).png",
+  "/images/event-decoration (3).jpg",
   "/images/event-decoration (4).jpg",
-  "/images/event-decoration (5).png",
-  "/images/event-decoration (6).png",
-  "/images/event-decoration (7).png",
-  "/images/event-decoration (8).png",
+  "/images/event-decoration (5).jpg",
+  "/images/event-decoration (6).jpg",
+  "/images/event-decoration (7).jpg",
+  "/images/event-decoration (8).jpg",
+  "/images/event-decoration (9).png",
 ];
 
 // *** YOUR FIX HERE ***: Adjust gap values as needed
@@ -144,7 +144,8 @@ export default function Carousel(): JSX.Element {
     
     {/* HEADER SECTION */}
     <div className="flex flex-col items-center justify-center text-center mb-6 px-4">
-      <h2 className="md:text-[36px] md:mb-[2.4] text-[28px] tracking-[2px] lg:tracking-[4px]">OUR BEAUTIFUL SPACE</h2>
+      <h2 className="md:text-[36px] md:mb-[2.4] text-[28px] tracking-[2px] lg:tracking-[4px] md:mt-[64px]
+">EXPLORE GALLERY</h2>
     </div>
 
     {/* CAROUSEL CONTAINER WITH FIXED HEIGHT */}

@@ -9,6 +9,9 @@ import Packages from "./home/Packages";
 import Carousel from "./home/Carousel";
 import Enquiry from "./page/Enquiry"; // ✅ import your new page
 import About from "./pages/About";
+import Media from "./pages/Media";
+import Privacy from "./pages/Privacy";
+import TermsAndConditions from "./pages/terms-condtion";
 function App() {
   return (
     <Router>
@@ -28,6 +31,9 @@ function App() {
         />
         <Route path="/enquiry" element={<Enquiry />} /> 
         <Route path="/about" element={<About />} /> 
+        <Route path="/media" element={<Media />} /> 
+        <Route path="/privacy" element={<Privacy />} /> 
+        <Route path="/terms-condtion" element={<TermsAndConditions />} /> 
       </Routes>
       <Footer />
     </Router>

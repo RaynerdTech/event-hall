@@ -4,7 +4,7 @@ export default function Experience() {
   return (
    <section
   className="
-    w-full px-4 md:mt-[80px] mt-[40px] md:mb-0 mb-[24px] pb-[24px]
+    w-full px-4 md:mt-[80px] mt-[40px] md:mb-0 mb-[24px] pb-[0px]
  
     md:shadow-none
   "

@@ -92,6 +92,8 @@ export default function EnquiryForm() {
     message: "",
   });
 
+const [showError, setShowError] = useState(false);
+
   const onChange = (e) => {
     const { name, value, type, checked } = e.target;
     setForm((s) => ({
@@ -114,16 +116,27 @@ export default function EnquiryForm() {
     );
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!isFormValid()) return;
+ const handleSubmit = (e) => {
+  e.preventDefault();
 
-    console.log("Enquiry submitted:", form);
-    alert("Form submitted! Check console for output.");
-  };
+  // If invalid, show popup and stop
+  if (!isFormValid()) {
+    setShowError(true);
+    setTimeout(() => setShowError(false), 3000); // Hide after 3 seconds
+    return;
+  }
+
+  console.log("Enquiry submitted:", form);
+  alert("Form submitted! Check console for output.");
+};
 
   return (
     <section className="w-full py-0 md:py-12 md:px-2 px-0">
+      {showError && (
+  <div className="fixed top-5 left-1/2 transform -translate-x-1/2 bg-[#93000A] text-white px-6 py-3 rounded-md shadow-lg z-50 text-sm font-medium transition-all duration-300">
+    Please fill all required fields to submit
+  </div>
+)}
  <div className="max-w-5xl mx-auto bg-[#F9F9F9] md:rounded-[80px] rounded-[40px] border border-gray-100 overflow-hidden">
   <div className="w-full p-4 md:p-14 py-[40px] scroll-frame">
 
@@ -148,7 +161,7 @@ export default function EnquiryForm() {
 
               {/* First Name */}
               <div>
-                <label className="block text-[#344054] font-inter text-[14px] font-medium leading-[20px] tracking-[0.1px] mb-2">
+                <label className="block text-[#000000] font-inter text-[14px] font-medium leading-[20px] tracking-[0.1px] mb-2">
                   First Name <span className="text-[#93000A] ml-[-2px]">*</span>
                 </label>
 
@@ -163,7 +176,7 @@ export default function EnquiryForm() {
 
               {/* Last Name */}
               <div>
-                <label className="block text-[#344054] font-inter text-[14px] font-medium leading-[20px] tracking-[0.1px] mb-2">
+                <label className="block text-[#000000] font-inter text-[14px] font-medium leading-[20px] tracking-[0.1px] mb-2">
                   Last Name <span className="text-[#93000A] ml-[-2px]">*</span>
                 </label>
                 <input
@@ -177,7 +190,7 @@ export default function EnquiryForm() {
 
               {/* Email */}
               <div>
-                <label className="block text-[#344054] font-inter text-[14px] font-medium leading-[20px] tracking-[0.1px] mb-2">
+                <label className="block text-[#000000] font-inter text-[14px] font-medium leading-[20px] tracking-[0.1px] mb-2">
                   Email Address{" "}
                   <span className="text-[#93000A] ml-[-2px]">*</span>
                 </label>
@@ -194,7 +207,7 @@ export default function EnquiryForm() {
 
               {/* ✅ Phone Number with Flag Dropdown */}
               <div>
-                <label className="block text-[#344054] font-inter text-[14px] font-medium leading-[20px] tracking-[0.1px] mb-2">
+                <label className="block text-[#000000] font-inter text-[14px] font-medium leading-[20px] tracking-[0.1px] mb-2">
                   Phone Number{" "}
                   <span className="text-[#93000A] ml-[-2px]">*</span>
                 </label>
@@ -274,17 +287,17 @@ export default function EnquiryForm() {
           </div>
 
           <div className="text-center">
-            <button
-              type="submit"
-              disabled={!isFormValid()}
-              className={`px-8 py-4 rounded-[8px] text-sm tracking-[0.25px] text-[14px] ${
-                isFormValid()
-                  ? "bg-[#8B5E3C] text-white"
-                  : "bg-[#7676801F] text-[#B1A9AA] cursor-not-allowed"
-              }`}
-            >
-              SUBMIT FORM
-            </button>
+          <button
+  type="submit"
+  // disabled={!isFormValid()}  <-- DELETE THIS LINE
+  className={`px-8 py-4 rounded-[8px] text-sm tracking-[0.25px] text-[14px] ${
+    isFormValid()
+      ? "bg-[#8B5E3C] text-white"
+      : "bg-[#7676801F] text-[#B1A9AA] cursor-not-allowed"
+  }`}
+>
+  SUBMIT FORM
+</button>
           </div>
         </form>
         </div>

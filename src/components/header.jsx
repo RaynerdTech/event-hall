@@ -50,20 +50,28 @@ const Header = () => {
                   : "max-h-40 opacity-100 mb-1"
               }`}
             >
-              <h1 className="text-3xl md:tracking-[4px]">GLORY RSVP</h1>
-              {/* <h3 className="tracking-[0.1px] mt-1 text-[#141011] uppercase text-[14px]">
+              <h1
+  className="text-3xl md:tracking-[4px] cursor-pointer"
+  onClick={() => window.location.href = "/"}
+>
+  GLORY RSVP
+</h1>
+
+      {/* <h3 className="tracking-[0.1px] mt-1 text-[#141011] uppercase text-[14px]">
                 LONDON
               </h3> */}
             </div>
             <div className="flex items-center justify-between">
               <div className="flex-1 text-left">
-                <h2
-                  className={`text-xl transition-opacity duration-300 ease-in-out font-serif ${
-                    isScrolled ? "opacity-100" : "opacity-0"
-                  }`}
-                >
-                  GLORY RSVP
-                </h2>
+             <h2
+  onClick={() => window.location.href = "/"}
+  className={`text-xl transition-opacity duration-300 ease-in-out font-serif cursor-pointer ${
+    isScrolled ? "opacity-100" : "opacity-0"
+  }`}
+>
+  GLORY RSVP               
+</h2>
+     
               </div>
               <div className="flex-shrink-0">
                <nav className="flex justify-center gap-8  text-[#141011]">
@@ -146,17 +154,19 @@ const Header = () => {
             </div>
 
             {/* Center: Logo */}
-            <div className="flex-grow text-center font-serif"> {/* Adjusted margin to better center */}
-              <h2 className="text-[16px]">GLORY RSVP</h2>
-             {/* <p className="text-[10px] uppercase tracking-[0.5px]">LONDON</p> */}
+          <div
+  className="flex-grow text-center font-serif cursor-pointer"
+  onClick={() => window.location.href = "/"}
+>
+  <h2 className="text-[16px]">GLORY RSVP</h2>
+</div>
 
-            </div>
 
             {/* Right: Divider + Enquire Button */}
             <div className="flex items-center gap-4">
               {/* Vertical Divider */}
               <div className="h-8 w-px bg-gray-300"></div>
-              <button className=" font-light text-[14px] tracking"  onClick={() => (window.location.href = "/contact")}>
+              <button className=" font-light text-[14px] tracking"  onClick={() => (window.location.href = "/enquiry")}>
                 
                   ENQUIRE
                 </button>
@@ -179,6 +189,7 @@ const Header = () => {
         <div className="flex flex-col h-full">
   {/* 30% White Area */}
   <nav className="flex-[0.2] bg-white flex flex-col items-start justify-center gap-4 text-left text-2xl px-4 pt-[68px] pb-2">
+    <Link to="/" onClick={closeMenu}>HOME</Link>
     <Link to="/about" onClick={closeMenu}>ABOUT US</Link>
     <Link to="/packages" onClick={closeMenu}>PACKAGES</Link>
     <Link to="/media" onClick={closeMenu}>MEDIA</Link>
@@ -194,8 +205,8 @@ const Header = () => {
   </div>
   
   <div className="flex flex-col gap-y-2">
-    <Link className="font-extralight" to="/privacy-policy" onClick={closeMenu}>Privacy Policy</Link>
-    <Link className="font-extralight" to="/terms" onClick={closeMenu}>Terms & Conditions</Link>
+    <Link className="font-extralight" to="/privacy" onClick={closeMenu}>Privacy Policy</Link>
+    <Link className="font-extralight" to="/terms-condtion" onClick={closeMenu}>Terms & Conditions</Link>
   </div>
 </div>
 

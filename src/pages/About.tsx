@@ -56,7 +56,7 @@ const About: React.FC = () => {
       </section>
 
       {/* ------------------ SECTION 2: VENUE ------------------ */}
-      <section className="w-full py-2 bg-white">
+      <section className="w-full py-0.7 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8  items-stretch">
           {/* IMAGE */}
           <div className="w-full sm:h-[300px] md:h-[420px] lg:h-auto order-3 lg:order-2">
@@ -242,6 +242,64 @@ const About: React.FC = () => {
           </div>
         </div>
       </section>
+
+     <section className="w-full py-12 text-center px-6">
+  <h2 className="text-[24px] md:text-2xl lg:text-3xl font-cormorant tracking-[2px] mb-6 font-bold leading-[32px] lg:leading-[48px]">
+    WHAT OUR COMPANY STANDS FOR
+  </h2>
+
+  <div className="max-w-3xl mx-auto space-y-10">
+
+    {/* ITEM 1 */}
+     <div className="mb-6 lg:m-0">
+      <p className="text-[14px] md:text-[16px] mb-2 text-[#000] tracking-[0.25px] leading-[20px] md:tracking-[1.8px] md:leading-[24px] mt-2">
+        <span className="font-cormorant font-bold text-[22px] leading-[28px] md:text-[24px] md:leading-[32px] md:tracking-[2px]">Hospitality & Customer Service:</span>{" "}
+        We deliver warm, attentive hospitality and professional customer service
+        from your first enquiry to the final guest departure.
+      </p>
+
+      {/* DOT – ONLY DESKTOP */}
+      <div className="hidden lg:block text-xl">•</div>
+    </div>
+
+    {/* ITEM 2 */}
+     <div className="mb-6 lg:m-0">
+      <p className="text-[14px] md:text-[16px] mb-2 text-[#000] tracking-[0.25px] leading-[20px] md:tracking-[1.8px] md:leading-[24px] mt-2">
+        <span className="font-cormorant font-bold text-[22px] leading-[28px] md:text-[24px] md:leading-[32px] md:tracking-[2px]">Premium Venue:</span>{" "}
+        We offer a modern, elegant, high-quality space that brings a Central
+        London feel to the heart of South East London.
+      </p>
+
+      <div className="hidden lg:block text-xl">•</div>
+    </div>
+
+    {/* ITEM 3 */}
+    <div className="mb-6 lg:m-0">
+      <p className="text-[14px] md:text-[16px] mb-2 text-[#000] tracking-[0.25px] leading-[20px] md:tracking-[1.8px] md:leading-[24px] mt-2">
+        <span className="font-cormorant font-bold text-[22px] leading-[28px] md:text-[24px] md:leading-[32px] md:tracking-[2px]">Transparent Pricing:</span>{" "}
+        We provide clear, honest pricing with no hidden fees, so you always
+        know exactly what you're paying for.
+      </p>
+
+      <div className="hidden lg:block text-xl">•</div>
+    </div>
+
+    {/* ITEM 4 — NO DOT */}
+    <div className="m-0 lg:m-0">
+      <p className="text-[14px] md:text-[16px] mb-2 text-[#000] tracking-[0.25px] leading-[20px] md:tracking-[1.8px] md:leading-[24px] mt-2">
+        <span className="font-cormorant font-bold text-[22px] leading-[28px] md:text-[24px] md:leading-[32px] md:tracking-[2px]">Holistic Approach:</span>{" "}
+        We offer a smooth, end-to-end experience, with additional support
+        available where needed — including décor, drinks ordering, and
+        professional waitstaff — so you can tailor your event to suit your vision.
+      </p>
+      {/* no dot here */}
+    </div>
+
+  </div>
+</section>
+
+
+
     </div>
   );
 };
