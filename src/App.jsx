@@ -12,6 +12,8 @@ import About from "./pages/About";
 import Media from "./pages/Media";
 import Privacy from "./pages/Privacy";
 import TermsAndConditions from "./pages/terms-condtion";
+import Packagespage from "./pages/packages";
+import ContactPage from "./pages/Contact";
 function App() {
   return (
     <Router>
@@ -34,6 +36,8 @@ function App() {
         <Route path="/media" element={<Media />} /> 
         <Route path="/privacy" element={<Privacy />} /> 
         <Route path="/terms-condtion" element={<TermsAndConditions />} /> 
+        <Route path="/packages" element={<Packagespage />} /> 
+        <Route path="/contact" element={<ContactPage />} /> 
       </Routes>
       <Footer />
     </Router>

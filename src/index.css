@@ -126,3 +126,26 @@ button {
     display: none;
   }
 }
+
+/* 
+.curved-border {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  border: 1px solid #f2b6c6;
+  border-top: none;
+  border-radius: 0 0 40px 40px;
+}
+
+.curved-border::before {
+  content: "";
+  position: absolute;
+  top: -130px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 420px;
+  height: 220px;
+  background: white;
+  border-bottom-left-radius: 240px;
+  border-bottom-right-radius: 240px;
+} */

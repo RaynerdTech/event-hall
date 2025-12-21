@@ -3,7 +3,7 @@ import React from "react";
 
 export default function TermsAndConditions() {
   return (
-    <div className="min-h-screen bg-white py-8 px-8">
+    <div className="min-h-screen bg-white py-8 md:px-8 px-4">
       <div className="max-w-4xl mx-auto">
         <h1 className="md:text-[28px] text-[24px] font-bold tracking-[2px] md:leading-[36px] mb-4 leading-[32px]"> 
           TERMS AND CONDITIONS
